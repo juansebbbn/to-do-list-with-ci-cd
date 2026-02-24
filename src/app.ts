@@ -19,7 +19,7 @@ app.get("/tasks", async (req: Request, res: Response) => {
 });
 
 // 2. Obtener estadísticas detalladas
-app.get("/tasks/statts", async (_req: Request, res: Response) => {
+app.get("/tasks/stats", async (_req: Request, res: Response) => {
   const stats = await taskService.getStats();
   res.json(stats);
 });
